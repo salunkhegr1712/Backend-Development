@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "body-parser": "^1.20.0"
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "request": "^2.88.2"
   },
   "name": "emailapp",
   "version": "1.0.0",
   "description": "Here we will correct email from user and then process it and save it at the backend",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
