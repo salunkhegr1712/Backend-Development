@@ -2,3 +2,6 @@ colourhunt
 bootstrap examples
 online repo for login page
 request npm package
+mailchimp
+api key mailchimp d18fa409c8cc4e68baf620ef697f67f3-us17
+audience id ca59bc965a
