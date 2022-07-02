@@ -1,0 +1,38 @@
+body {
+
+  text-align: center;
+  padding: 40px 0;
+  background-color: #14C38E;
+
+}
+  h1 {
+    color:  #14C38E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  p {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:25px;
+    margin: 0;
+  }
+  
+i {
+  color:  #14C38E;
+
+  font-size: 170px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.card {
+  background: white;
+  padding: 125px 80px ;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  margin: 0 auto;
+}
