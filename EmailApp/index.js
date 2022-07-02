@@ -7,9 +7,11 @@ const client = require("@mailchimp/mailchimp_marketing");
 
 // setting up mailchimp
 client.setConfig({
-  apiKey: "d18fa409c8cc4e68baf620ef697f67f3-us17",
+  apiKey: "43f3fa12a77f6cecc446c71319e6526f-us17",
   server: "us17",
 })
+
+// setting up the bodyparser to the server so that we can able to get data from the
 
 const server = express();
 server.use(bp.urlencoded({
@@ -20,9 +22,10 @@ server.use(bp.urlencoded({
 server.use(express.static("public"));
 // so you can fetch local files as input
 // you have specify local files like youre using it from that local folder
-const port = 3000;
-server.listen(port, function() {
-  console.log("server is running on port no : " + port);
+
+// port is dynamic heroku port
+server.listen(process.env.PORT || 3000, function() {
+  console.log("server is running on port no : " + process.env.PORT);
 });
 
 server.get("/", function(req, res) {
@@ -50,7 +53,7 @@ server.post("/", function(req, res) {
   }
 
 
-  const run = async () => {
+  const run = async() => {
     const response = await client.lists.addListMember("ca59bc965a", {
       email_address: subscribingUser.email,
       status: "subscribed",
@@ -66,13 +69,11 @@ server.post("/", function(req, res) {
       res.sendFile(__dirname + "/success.html");
     }
     else{
-      res.send("try again");
+      res.sendFile(__dirname + "/failure.html");
     }
   }
 
   run();
-
-
 
 
 });

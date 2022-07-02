@@ -7,11 +7,11 @@ body {
 
 .login {
   color: white;
-  background: #51557E;
+  background: #9A86A4;
   background:
-    -webkit-linear-gradient(to right, #FF8D69, #14C38E);
+    -webkit-linear-gradient(to right, #3BACB6, #14C38E);
   background:
-    linear-gradient(to right, #FF8D69, #14C38E);
+    linear-gradient(to right, #3BACB6, #14C38E);
   margin: auto;
   box-shadow:
     0px 2px 10px rgba(0, 0, 0, 0.2) 0px 10px 20px rgba(0, 0, 0, 0.3),
@@ -101,7 +101,7 @@ body {
 }
 
 .btt:hover {
-  background-color: #FF8D69;
+  background-color: #1A3C40;
 }
 
 #login {

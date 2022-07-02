@@ -3,5 +3,8 @@ bootstrap examples
 online repo for login page
 request npm package
 mailchimp
-api key mailchimp d18fa409c8cc4e68baf620ef697f67f3-us17
+api key mailchimp
 audience id ca59bc965a
+heroku
+https://serene-brushlands-80666.herokuapp.com/ |
+https://git.heroku.com/serene-brushlands-80666.git
